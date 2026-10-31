@@ -6,4 +6,4 @@ def test_parse_query():
 
 
 def test_parse_url_strips_spaces():
-    assert parse_url(" https://a.com/b ")["host"] == "a.com"
+    assert parse_url(" https://a.com/b ")["scheme"] == "https"
