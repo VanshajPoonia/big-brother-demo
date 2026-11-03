@@ -2,6 +2,7 @@ MAX_LENGTH = 255
 
 
 def parse_url(url):
+    url = url.strip()
     if len(url) > MAX_LENGTH:
         raise ValueError("URL too long")
     scheme, _, rest = url.partition("://")
